@@ -3,518 +3,814 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="etEindpzkVcw72mnXPoUeP4SEeXY-oB87JPIBzsYmM4">
-<title>Bookkeeping Services in USA | Certified Bookkeeper for Small Businesses and CPA Firm</title>
- 
-<meta name="description" content="Looking for bookkeeping services in USA? Our certified bookkeepers manage your accounts, payroll, and financial statements accurately — every month.">
- 
-<link rel="canonical" href="https://github.com/micro-lot-strategy.github.io/">
+<title>Bookkeeping Services in USA – Accurate Financial Records for Every Business</title>
+<meta name="description" content="Professional bookkeeping services in USA helping small businesses maintain accurate financial records, manage payroll, and stay tax-ready year-round.">
+<link rel="canonical" href="https://yourdomain.com/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
  
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f7fa;
-    color: #333;
-}
+  :root {
+    --navy: #0b1f3a;
+    --navy-mid: #122848;
+    --navy-light: #1a3a5c;
+    --gold: #c9a84c;
+    --gold-light: #e2c06a;
+    --gold-pale: #f5ecd7;
+    --cream: #faf8f4;
+    --white: #ffffff;
+    --text: #1a1a2e;
+    --text-muted: #5a6a7e;
+    --border: rgba(201,168,76,0.2);
+  }
  
-header {
-    background: #0b3d91;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-    background: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
+  html { scroll-behavior: smooth; }
  
-h1 {
-    color: #ffffff;
-}
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
  
-h2 {
-    color: #0b3d91;
-}
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 1000;
+    padding: 18px 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(11,31,58,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: padding 0.3s;
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 600;
+    color: var(--white); letter-spacing: 0.5px;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none; font-size: 14px; font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold); color: var(--navy);
+    padding: 10px 24px; border-radius: 4px;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+    text-decoration: none; text-transform: uppercase;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
  
-h3 {
-    color: #0b3d91;
-}
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    background: var(--navy);
+    display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    padding: 120px 60px 80px;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.08) 0%, transparent 65%),
+                radial-gradient(ellipse at 10% 80%, rgba(26,58,92,0.6) 0%, transparent 50%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: linear-gradient(var(--gold) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--gold) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    max-width: 680px;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,168,76,0.12); border: 1px solid var(--border);
+    color: var(--gold); padding: 6px 16px; border-radius: 20px;
+    font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+    margin-bottom: 28px;
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero-badge::before {
+    content: ''; width: 6px; height: 6px; background: var(--gold);
+    border-radius: 50%; animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.4); }
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 6vw, 74px);
+    font-weight: 300; line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 24px;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero p {
+    font-size: 17px; line-height: 1.8;
+    color: rgba(255,255,255,0.65);
+    max-width: 520px; margin-bottom: 44px;
+    font-weight: 300;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+  .hero-actions {
+    display: flex; gap: 16px; flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+  .btn-primary {
+    background: var(--gold); color: var(--navy);
+    padding: 16px 36px; border-radius: 4px;
+    font-size: 14px; font-weight: 600; letter-spacing: 0.5px;
+    text-decoration: none; text-transform: uppercase;
+    transition: all 0.3s; border: none; cursor: pointer;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(201,168,76,0.3); }
+  .btn-outline {
+    background: transparent; color: var(--white);
+    padding: 16px 36px; border-radius: 4px;
+    font-size: 14px; font-weight: 500; letter-spacing: 0.5px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    transition: all 0.3s; display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
  
-h4 {
-    color: #ffffff;
-}
+  .hero-stats {
+    position: absolute; right: 60px; bottom: 80px;
+    display: flex; gap: 48px; z-index: 2;
+    animation: fadeUp 0.8s 0.4s ease both;
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px; font-weight: 600; color: var(--gold);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 11px; color: rgba(255,255,255,0.5);
+    letter-spacing: 1px; text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .hero-divider {
+    width: 1px; background: rgba(255,255,255,0.1);
+    align-self: stretch; margin: 4px 0;
+  }
  
-ul {
-    padding-left: 20px;
-}
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
  
-footer {
-    background: #0b3d91;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-.cta {
-    background: #e6f0ff;
-    padding: 20px;
-    border-left: 5px solid #0b3d91;
-}
+  /* ─── TRUST BAR ─── */
+  .trust-bar {
+    background: var(--gold-pale);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 60px;
+    display: flex; align-items: center; justify-content: center;
+    gap: 48px; flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 13px; font-weight: 500; color: var(--navy-mid);
+    letter-spacing: 0.3px;
+  }
+  .trust-icon { font-size: 18px; }
+ 
+  /* ─── SECTION COMMONS ─── */
+  section { padding: 100px 60px; }
+  .section-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(34px, 4vw, 52px);
+    font-weight: 400; line-height: 1.15;
+    color: var(--navy); margin-bottom: 20px;
+  }
+  .section-title em { font-style: italic; color: var(--gold); }
+  .section-sub {
+    font-size: 16px; line-height: 1.8;
+    color: var(--text-muted); max-width: 560px;
+    font-weight: 300;
+  }
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+ 
+  /* ─── SERVICES ─── */
+  .services-section { background: var(--white); }
+  .services-header { text-align: center; margin-bottom: 64px; }
+  .services-header .section-sub { margin: 0 auto; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    max-width: 1100px; margin: 0 auto;
+    border: 2px solid var(--navy);
+    border-radius: 8px; overflow: hidden;
+  }
+  .service-card {
+    padding: 44px 36px;
+    background: var(--white);
+    transition: background 0.3s;
+    border-right: 2px solid var(--navy);
+    border-bottom: 2px solid var(--navy);
+  }
+  .service-card:nth-child(3), .service-card:nth-child(6) { border-right: none; }
+  .service-card:nth-child(4), .service-card:nth-child(5), .service-card:nth-child(6) { border-bottom: none; }
+  .service-card:hover { background: var(--navy); }
+  .service-card:hover .service-title { color: var(--white); }
+  .service-card:hover .service-desc { color: rgba(255,255,255,0.6); }
+  .service-card:hover .service-icon { background: rgba(201,168,76,0.15); color: var(--gold); }
+  .service-icon {
+    width: 48px; height: 48px; border-radius: 8px;
+    background: var(--gold-pale);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 20px;
+    transition: all 0.3s;
+  }
+  .service-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 600; color: var(--navy);
+    margin-bottom: 10px; transition: color 0.3s;
+  }
+  .service-desc {
+    font-size: 14px; line-height: 1.75; color: var(--text-muted);
+    transition: color 0.3s; font-weight: 300;
+  }
+ 
+  /* ─── WHY US ─── */
+  .why-section {
+    background: var(--navy);
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: center;
+  }
+  .why-section .section-title { color: var(--white); }
+  .why-section .section-sub { color: rgba(255,255,255,0.55); }
+  .why-list { margin-top: 40px; display: flex; flex-direction: column; gap: 28px; }
+  .why-item {
+    display: flex; gap: 20px; align-items: flex-start;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .why-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .why-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px; font-weight: 700; color: var(--gold);
+    opacity: 0.4; line-height: 1; flex-shrink: 0; width: 36px;
+  }
+  .why-text h4 {
+    font-size: 16px; font-weight: 600; color: var(--white);
+    margin-bottom: 6px;
+  }
+  .why-text p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.7; font-weight: 300; }
+  .why-visual {
+    position: relative; display: flex;
+    align-items: center; justify-content: center;
+  }
+  .why-card-big {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 12px; padding: 44px 36px;
+    width: 100%;
+  }
+  .metric-row { display: flex; justify-content: space-between; margin-bottom: 32px; }
+  .metric { text-align: center; }
+  .metric-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px; font-weight: 600; color: var(--gold);
+  }
+  .metric-lbl { font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px; margin-top: 4px; }
+  .bar-chart { display: flex; flex-direction: column; gap: 14px; }
+  .bar-row { display: flex; align-items: center; gap: 12px; }
+  .bar-label { font-size: 12px; color: rgba(255,255,255,0.5); width: 110px; flex-shrink: 0; }
+  .bar-track { flex: 1; background: rgba(255,255,255,0.07); border-radius: 4px; height: 8px; }
+  .bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+  .bar-pct { font-size: 12px; color: var(--gold); width: 36px; text-align: right; }
+ 
+  /* ─── PROCESS ─── */
+  .process-section { background: var(--cream); text-align: center; }
+  .process-header { margin-bottom: 72px; }
+  .process-steps {
+    display: flex; gap: 0; max-width: 1000px;
+    margin: 0 auto; position: relative;
+  }
+  .process-steps::before {
+    content: '';
+    position: absolute; top: 36px; left: 10%; right: 10%; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .process-step { flex: 1; padding: 0 20px; }
+  .step-num {
+    width: 72px; height: 72px; border-radius: 50%;
+    background: var(--white); border: 2px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 24px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px; font-weight: 600; color: var(--gold);
+    position: relative; z-index: 2;
+    transition: all 0.3s;
+  }
+  .process-step:hover .step-num { background: var(--gold); color: var(--white); }
+  .step-title { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+  .step-desc { font-size: 13px; line-height: 1.7; color: var(--text-muted); font-weight: 300; }
+ 
+  /* ─── CTA BANNER ─── */
+  .cta-banner {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    padding: 80px 60px;
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .cta-banner::before {
+    content: '';
+    position: absolute; top: -50%; left: -10%;
+    width: 500px; height: 500px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.07), transparent 70%);
+  }
+  .cta-banner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 52px);
+    color: var(--white); font-weight: 400; margin-bottom: 16px;
+    position: relative; z-index: 2;
+  }
+  .cta-banner h2 em { font-style: italic; color: var(--gold); }
+  .cta-banner p {
+    color: rgba(255,255,255,0.6); font-size: 16px; margin-bottom: 40px;
+    font-weight: 300; position: relative; z-index: 2;
+  }
+  .cta-banner .btn-primary { position: relative; z-index: 2; }
+ 
+  /* ─── FAQ ─── */
+  .faq-section { background: var(--white); }
+  .faq-inner { max-width: 800px; margin: 0 auto; }
+  .faq-header { text-align: center; margin-bottom: 56px; }
+  .faq-item {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  .faq-question {
+    width: 100%; background: none; border: none;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 24px 0; cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px; font-weight: 500; color: var(--navy);
+    text-align: left; gap: 20px;
+    transition: color 0.2s;
+  }
+  .faq-question:hover { color: var(--gold); }
+  .faq-question.active { color: var(--gold); }
+  .faq-icon {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--gold-pale); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; color: var(--gold);
+    transition: transform 0.3s, background 0.3s;
+  }
+  .faq-question.active .faq-icon { transform: rotate(45deg); background: var(--gold); color: var(--white); }
+  .faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+  }
+  .faq-answer.open { max-height: 200px; }
+  .faq-answer p {
+    font-size: 15px; line-height: 1.8; color: var(--text-muted);
+    padding-bottom: 24px; font-weight: 300;
+  }
+ 
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--navy);
+    padding: 60px 60px 32px;
+  }
+  .footer-top {
+    display: flex; justify-content: space-between;
+    align-items: flex-start; gap: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    flex-wrap: wrap;
+  }
+  .footer-brand { max-width: 280px; }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; font-weight: 600; color: var(--white);
+    margin-bottom: 12px;
+  }
+  .footer-logo span { color: var(--gold); }
+  .footer-tagline { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; font-weight: 300; }
+  .footer-col h5 { font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col ul a { font-size: 14px; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+  .footer-col ul a:hover { color: var(--white); }
+  .footer-bottom {
+    padding-top: 28px;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+  }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+ 
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 1024px) {
+    nav { padding: 16px 30px; }
+    .nav-links { display: none; }
+    section { padding: 70px 30px; }
+    .hero { padding: 100px 30px 180px; }
+    .hero-stats { right: 30px; bottom: 40px; gap: 24px; }
+    .stat-num { font-size: 30px; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .service-card:nth-child(2) { border-right: none; }
+    .service-card:nth-child(3) { border-right: 2px solid var(--navy); }
+    .service-card:nth-child(5) { border-bottom: 2px solid var(--navy); border-right: none; }
+    .service-card:nth-child(6) { border-right: none; border-bottom: none; }
+    .why-section { grid-template-columns: 1fr; gap: 48px; }
+    .trust-bar { padding: 20px 30px; gap: 24px; }
+    .process-steps { flex-direction: column; gap: 32px; }
+    .process-steps::before { display: none; }
+    .footer-top { flex-direction: column; }
+    .cta-banner { padding: 60px 30px; }
+  }
+ 
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 38px; }
+    .hero-stats { position: static; margin-top: 48px; justify-content: center; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service-card { border-right: none !important; border-bottom: 2px solid var(--navy) !important; }
+    .service-card:last-child { border-bottom: none !important; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-outline { text-align: center; }
+  }
 </style>
 </head>
- 
 <body>
  
-<header>
-    <h1>Bookkeeping Services in USA: Keep Your Finances Accurate and Business-Ready with Certified Bookkeeper</h1>
-</header>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Ledger<span>Pro</span></div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get Started</a>
+</nav>
  
-<section>
-<h2>Introduction</h2>
-<p><strong>Bookkeeping services in USA</strong> are the financial backbone of every successful business — from sole proprietors to growing corporations. Professional bookkeepers maintain accurate financial records, track income and expenses, and ensure your business is always prepared for tax season, audits, and strategic planning.</p>
- 
-<p>According to the U.S. Bureau of Labor Statistics, there are over 1.7 million bookkeeping, accounting, and auditing clerks employed across the country. For businesses of all sizes, working with certified bookkeeping professionals means fewer errors, better cash flow visibility, and stronger financial health year-round.</p>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Trusted Bookkeeping Services in USA</div>
+    <h1>Your Finances,<br><em>Perfectly</em> Managed.</h1>
+    <p>Professional bookkeeping services that keep your financial records accurate, your payroll seamless, and your business tax-ready — every single month.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Start Today</a>
+      <a href="#services" class="btn-outline">Explore Services</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Businesses Served</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="stat">
+      <div class="stat-num">99%</div>
+      <div class="stat-label">Accuracy Rate</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="stat">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+  </div>
 </section>
  
- 
-<style>
-.cta-section {
-    max-width: 500px;
-    width: 100%;
-    background: linear-gradient(135deg, #8B2E5C 0%, #A63D6F 100%);
-    color: white;
-    padding: 40px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    margin: 20px auto;
-}
- 
-    .logo {
-        background: white;
-        color: #8B2E5C;
-        padding: 4px 12px;
-        border-radius: 12px;
-        font-size: 14px;
-        font-weight: bold;
-        display: inline-block;
-        margin-bottom: 20px;
-    }
- 
-    .cta-section h4 {
-        font-size: 32px;
-        line-height: 1.3;
-        margin-bottom: 25px;
-        font-weight: 600;
-		color: white;
-    }
- 
-    .promo-code {
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
- 
-    .promo-code span {
-        font-weight: bold;
-        color: #FFD700;
-        letter-spacing: 0.5px;
-    }
- 
-    .copy-btn {
-        background: transparent;
-        border: 1px solid #FFD700;
-        color: #FFD700;
-        padding: 3px 10px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 11px;
-        margin-left: 8px;
-        transition: all 0.3s;
-        font-weight: 600;
-    }
- 
-    .copy-btn:hover {
-        background: #FFD700;
-        color: #8B2E5C;
-    }
- 
-    .copied {
-        background: #4CAF50 !important;
-        color: white !important;
-        border-color: #4CAF50 !important;
-    }
- 
-    .expiry {
-        font-size: 12px;
-        opacity: 0.9;
-        margin-bottom: 25px;
-    }
- 
-    .cta-button {
-        background: #FF6347;
-        color: white;
-        border: none;
-        padding: 14px 40px;
-        border-radius: 25px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
- 
-    .cta-button:hover {
-        background: #FF4520;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 8px rgba(0,0,0,0.3);
-    }
- 
-    .cta-button:active {
-        transform: translateY(0);
-    }
- 
-    .sub-text {
-        font-size: 12px;
-        margin-top: 12px;
-        opacity: 0.95;
-    }
-</style>
- 
-<!-- CTA Section -->
-<div class="cta-section">
-    <div class="logo">BOOKKEEPING SERVICES USA</div>
-    <h1>Get started for less — accurate books from day one</h1>
-    
-    <button class="cta-button" onclick="handleCTA()">Let's do this!</button>
-    <div class="sub-text">For any new bookkeeping account.</div>
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="trust-icon">✦</span> IRS Compliant Recordkeeping</div>
+  <div class="trust-item"><span class="trust-icon">✦</span> QuickBooks & Xero Certified</div>
+  <div class="trust-item"><span class="trust-icon">✦</span> GAAP-Aligned Standards</div>
+  <div class="trust-item"><span class="trust-icon">✦</span> CPA-Ready Financials</div>
+  <div class="trust-item"><span class="trust-icon">✦</span> Dedicated Account Manager</div>
 </div>
+ 
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="services-header reveal">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title">Comprehensive <em>Bookkeeping</em><br>Services in USA</h2>
+    <p class="section-sub">From daily transaction recording to year-end tax preparation — we handle every aspect of your business finances with precision.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-icon">📒</div>
+      <div class="service-title">Monthly Bookkeeping</div>
+      <p class="service-desc">Regular transaction recording, expense categorization, and bank reconciliation to keep your books clean and current every month.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">💼</div>
+      <div class="service-title">Payroll Processing</div>
+      <p class="service-desc">Accurate salary disbursement, payroll tax withholding, W-2 and 1099 preparation, and federal/state payroll filings handled seamlessly.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📊</div>
+      <div class="service-title">Financial Statements</div>
+      <p class="service-desc">Professionally prepared profit & loss statements, balance sheets, and cash flow reports that give you real financial clarity.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🧾</div>
+      <div class="service-title">Accounts Payable & Receivable</div>
+      <p class="service-desc">Efficient vendor payment management, invoice tracking, and collections follow-up to maintain healthy cash flow.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔄</div>
+      <div class="service-title">Catch-Up Bookkeeping</div>
+      <p class="service-desc">Disorganized or overdue financial records? We restore your books to full accuracy and compliance, regardless of how far behind you are.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">✅</div>
+      <div class="service-title">Tax-Ready Bookkeeping</div>
+      <p class="service-desc">Year-end financial preparation aligned with IRS requirements and your CPA's needs, so tax season is stress-free every year.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- WHY US -->
+<section class="why-section" id="why">
+  <div class="reveal">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title" style="color:white">Built for <em>American</em><br>Business Owners</h2>
+    <p class="section-sub">We understand US tax laws, IRS regulations, and state-level compliance requirements — so you don't have to.</p>
+    <div class="why-list">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <div class="why-text">
+          <h4>Certified & Experienced Professionals</h4>
+          <p>Our team includes Certified Public Bookkeepers (CPB) and QuickBooks ProAdvisors with hands-on experience across diverse US industries.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <div class="why-text">
+          <h4>Real-Time Financial Visibility</h4>
+          <p>Access your up-to-date financial data anytime through QuickBooks Online, Xero, or your preferred platform — always in sync.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <div class="why-text">
+          <h4>Scalable for Any Business Size</h4>
+          <p>From freelancers and startups to multi-entity businesses — our bookkeeping services scale precisely with your growth.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <div class="why-text">
+          <h4>IRS Audit-Ready Records</h4>
+          <p>Clean, documented, and compliant financial records that withstand scrutiny — no last-minute scrambles, ever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="why-visual reveal">
+    <div class="why-card-big">
+      <div class="metric-row">
+        <div class="metric">
+          <div class="metric-val">$2.4M</div>
+          <div class="metric-lbl">Avg. Managed Annually</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">48hr</div>
+          <div class="metric-lbl">Avg. Turnaround</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">0</div>
+          <div class="metric-lbl">IRS Penalties</div>
+        </div>
+      </div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Tax Compliance</div>
+          <div class="bar-track"><div class="bar-fill" style="width:98%"></div></div>
+          <div class="bar-pct">98%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Record Accuracy</div>
+          <div class="bar-track"><div class="bar-fill" style="width:99%"></div></div>
+          <div class="bar-pct">99%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">On-Time Filing</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+          <div class="bar-pct">100%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Client Retention</div>
+          <div class="bar-track"><div class="bar-fill" style="width:96%"></div></div>
+          <div class="bar-pct">96%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Payroll Accuracy</div>
+          <div class="bar-track"><div class="bar-fill" style="width:99%"></div></div>
+          <div class="bar-pct">99%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PROCESS -->
+<section class="process-section" id="process">
+  <div class="process-header reveal">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-title">Get Started in <em>4 Simple Steps</em></h2>
+    <p class="section-sub" style="margin:0 auto">From onboarding to fully managed books — we make the transition smooth and effortless.</p>
+  </div>
+  <div class="process-steps reveal">
+    <div class="process-step">
+      <div class="step-num">1</div>
+      <div class="step-title">Free Consultation</div>
+      <p class="step-desc">We assess your business needs, current financial state, and preferred accounting software.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">2</div>
+      <div class="step-title">Onboarding & Setup</div>
+      <p class="step-desc">We connect to your accounts, organize historical data, and configure your bookkeeping system.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">3</div>
+      <div class="step-title">Monthly Management</div>
+      <p class="step-desc">Your dedicated bookkeeper handles all transactions, reconciliations, and reports every month.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">4</div>
+      <div class="step-title">Review & Grow</div>
+      <p class="step-desc">Regular financial reviews give you clear insights to make smarter business decisions.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- CTA BANNER -->
+<div class="cta-banner" id="contact">
+  <h2>Ready for <em>Clean, Accurate</em> Books?</h2>
+  <p>Join hundreds of US businesses that trust us with their financial records. Start today — no commitment required.</p>
+  <a href="mailto:hello@yourdomain.com" class="btn-primary">Schedule a Free Call</a>
+</div>
+ 
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-header reveal">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common <em>Questions</em></h2>
+    </div>
+    <div class="reveal">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What do bookkeeping services in USA typically include?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Professional bookkeeping services in the USA cover transaction recording, bank reconciliation, accounts payable and receivable management, payroll processing, financial statement preparation, and year-end tax-ready reporting.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          How much do bookkeeping services cost in the USA?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Pricing depends on transaction volume and service scope. Most small business bookkeeping packages in the USA start between $200–$500 per month, with full-service options available for larger businesses.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Do I still need a bookkeeper if I use QuickBooks?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. While QuickBooks automates data entry, a certified bookkeeper ensures proper categorization, timely reconciliations, compliance with IRS guidelines, and accurate financial reporting — tools alone cannot replace that expertise.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Are your bookkeeping services suitable for small businesses?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Small businesses benefit most from professional bookkeeping — it prevents costly errors, ensures tax compliance, and provides financial clarity that supports smarter day-to-day decisions.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What is the difference between a bookkeeper and a CPA in the USA?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>A bookkeeper maintains day-to-day financial records and reconciliations. A CPA uses that data for tax filing, auditing, and strategic financial advisory. Most US businesses benefit from working with both professionals in tandem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">Ledger<span>Pro</span></div>
+      <p class="footer-tagline">Professional bookkeeping services for businesses across the United States. Accurate records. Clean books. Zero stress.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#">Monthly Bookkeeping</a></li>
+        <li><a href="#">Payroll Processing</a></li>
+        <li><a href="#">Accounts Payable</a></li>
+        <li><a href="#">Financial Statements</a></li>
+        <li><a href="#">Catch-Up Bookkeeping</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Process</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="https://calendly.com/globusfinanza/30min?back=1&month=2025-02">Book Free Meeting</a></li>
+        <li><a href="#">Mon–Fri, 9am–6pm EST</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Bookkeeping Services USA. All Rights Reserved.</p>
+    <p class="footer-copy"><a href="#" style="color:rgba(255,255,255,0.3);text-decoration:none">Privacy Policy</a> &nbsp;·&nbsp; <a href="#" style="color:rgba(255,255,255,0.3);text-decoration:none">Terms of Service</a></p>
+  </div>
+</footer>
  
 <script>
-    function handleCTA() {
-        window.location.href = 'https://seontips.com/';
-    }
+  // FAQ Toggle
+  function toggleFAQ(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-question').forEach(b => b.classList.remove('active'));
+    if (!isOpen) { answer.classList.add('open'); btn.classList.add('active'); }
+  }
+ 
+  // Scroll Reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+ 
+  // Animate bars on scroll
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+          const w = bar.style.width;
+          bar.style.width = '0';
+          setTimeout(() => { bar.style.transition = 'width 1.2s ease'; bar.style.width = w; }, 200);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.why-card-big').forEach(el => barObserver.observe(el));
 </script>
- 
- 
-<section>
-<h2>What Are Bookkeeping Services in the USA?</h2>
- 
-<p>Professional <strong>bookkeeping services in USA</strong> cover the systematic recording, organizing, and tracking of all financial transactions for a business. Core tasks typically include:</p>
- 
-<ul>
-<li>Recording daily income and expenses</li>
-<li>Managing accounts payable and accounts receivable</li>
-<li>Bank reconciliation and statement matching</li>
-<li><strong>Payroll processing</strong> and tax withholding</li>
-<li>Preparing monthly and quarterly financial statements</li>
-<li>Sales tax tracking and filing support</li>
-</ul>
- 
-<p>American bookkeepers often work with popular platforms such as QuickBooks, Xero, FreshBooks, and Wave to deliver real-time financial visibility to business owners.</p>
- 
-<h3>Bookkeeping vs. Accounting — What's the Difference?</h3>
-<p>Bookkeeping focuses on recording transactions and maintaining clean ledgers. Accounting builds on that data for analysis, forecasting, and strategic financial decisions. Both work hand-in-hand to keep a business financially sound.</p>
-</section>
- 
-<section>
-<h2>Key Benefits of Professional Bookkeeping Services in USA</h2>
- 
-<h3>1. Accurate Financial Records</h3>
-<p>Proper bookkeeping ensures every dollar is tracked. Clean, error-free records are essential for loan applications, investor reports, and business valuations.</p>
- 
-<h3>2. Tax Compliance and Readiness</h3>
-<p>USA bookkeepers stay updated with IRS regulations, sales tax laws, and state-level requirements — keeping your business fully compliant and audit-ready throughout the year.</p>
- 
-<h3>3. Improved Cash Flow Management</h3>
-<p>Understanding your inflows and outflows in real time helps you make better decisions about spending, hiring, and investment.</p>
- 
-<h3>4. Time Savings for Business Owners</h3>
-<p>Delegating bookkeeping to a qualified professional frees up your time to focus on core operations and business growth.</p>
- 
-<div class="cta">
-<strong>Expert Insight:</strong> The IRS recommends that all businesses — regardless of size — maintain organized financial records throughout the year to avoid costly penalties and missed deductions.
-</div>
- 
-</section>
- 
-<section>
-<h2>Pros and Cons of Hiring Bookkeeping Services in USA</h2>
- 
-<h3>Pros</h3>
-<ul>
-<li>Certified expertise in US accounting standards (GAAP)</li>
-<li>Up-to-date knowledge of federal and state tax laws</li>
-<li>Reduced risk of financial errors and IRS penalties</li>
-<li>Scalable support as your business grows</li>
-<li>Integration with modern accounting software</li>
-</ul>
- 
-<h3>Cons</h3>
-<ul>
-<li>Monthly service fees add to operating costs</li>
-<li>Requires time to onboard and share financial access</li>
-<li>Quality may vary between providers — due diligence is needed</li>
-</ul>
-</section>
- 
-<section>
-<h2>Common Bookkeeping Services Offered Across the USA</h2>
- 
-<p>Businesses in the USA can choose from a wide range of bookkeeping service packages, including:</p>
- 
-<ul>
-<li><strong>Monthly Bookkeeping:</strong> Regular transaction recording, categorization, and reconciliation</li>
-<li><strong>Payroll Services:</strong> Salary processing, payroll tax filings, and W-2/1099 preparation</li>
-<li><strong>Accounts Payable &amp; Receivable:</strong> Invoice management, vendor payments, and collections tracking</li>
-<li><strong>Financial Statement Preparation:</strong> Profit &amp; loss statements, balance sheets, and cash flow reports</li>
-<li><strong>Catch-Up Bookkeeping:</strong> Bringing overdue or disorganized records up to date</li>
-<li><strong>Tax-Ready Bookkeeping:</strong> Year-end preparation aligned with CPA and tax professional requirements</li>
-</ul>
-</section>
- 
-<section>
-<h2>How to Choose the Right Bookkeeping Service in the USA</h2>
- 
-<h3>Step 1: Identify Your Business Needs</h3>
-<p>Determine whether you need basic monthly bookkeeping, full-service accounting support, payroll management, or tax preparation assistance.</p>
- 
-<h3>Step 2: Check Credentials and Experience</h3>
-<p>Look for Certified Public Bookkeepers (CPB), QuickBooks ProAdvisors, or professionals with CPA oversight to ensure quality and compliance.</p>
- 
-<h3>Step 3: Evaluate Software Compatibility</h3>
-<p>Confirm the provider works with your existing accounting tools — QuickBooks Online, Xero, or others — for seamless data integration.</p>
- 
-<h3>Step 4: Review Pricing and Service Tiers</h3>
-<p>Compare service packages based on your transaction volume, number of accounts, and whether you need add-ons like payroll or sales tax filing.</p>
-</section>
- 
-<section>
-<h2>Why Businesses Across the USA Rely on Professional Bookkeepers</h2>
- 
-<p>From startups in Silicon Valley to retail shops in the Midwest, businesses of every type and size rely on dedicated bookkeeping professionals for one primary reason: <strong>financial clarity</strong>. With accurate books, business owners can:</p>
- 
-<ul>
-<li>Make informed decisions backed by real financial data</li>
-<li>Qualify for business loans and lines of credit</li>
-<li>Identify profit leaks and cost-saving opportunities</li>
-<li>Stay ahead of quarterly estimated tax deadlines</li>
-<li>Confidently present financials to investors or partners</li>
-</ul>
- 
-<p>Industries that rely most heavily on bookkeeping services in the USA include retail, healthcare, real estate, construction, e-commerce, and professional services.</p>
-</section>
- 
-<section>
-<h2>Common Bookkeeping Mistakes to Avoid</h2>
- 
-<ul>
-<li>Mixing personal and business finances in the same account</li>
-<li>Failing to reconcile bank statements monthly</li>
-<li>Neglecting to track receipts and supporting documents</li>
-<li>Missing payroll tax deposit deadlines</li>
-<li>Skipping year-end financial reviews before tax season</li>
-</ul>
-</section>
- 
-<section>
-<h2>Conclusion</h2>
-<p>Investing in professional <strong>bookkeeping services in USA</strong> is one of the smartest financial decisions a business owner can make. Accurate recordkeeping, timely payroll processing, clean accounts receivable and payable management, and year-round tax readiness all contribute to a healthier, more profitable business. Whether you run a small business or manage a multi-entity operation, trusted bookkeeping professionals give you the financial foundation needed to grow with confidence.</p>
-</section>
- 
-<section>
-<h2>Suggested Image Alt Text</h2>
-<ul>
-<li>Professional bookkeeping services in USA for small businesses</li>
-<li>Certified bookkeeper managing financial records in the USA</li>
-<li>QuickBooks bookkeeping services USA small business accounting</li>
-<li>Payroll and accounts payable bookkeeping services United States</li>
-</ul>
-</section>
- 
-<style>
-.cta-section {
-    max-width: 500px;
-    width: 100%;
-    background: linear-gradient(135deg, #8B2E5C 0%, #A63D6F 100%);
-    color: white;
-    padding: 40px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    margin: 20px auto;
-}
- 
-    .logo {
-        background: white;
-        color: #8B2E5C;
-        padding: 4px 12px;
-        border-radius: 12px;
-        font-size: 14px;
-        font-weight: bold;
-        display: inline-block;
-        margin-bottom: 20px;
-    }
- 
-    .cta-section h4 {
-        font-size: 32px;
-        line-height: 1.3;
-        margin-bottom: 25px;
-        font-weight: 600;
-		color: white;
-    }
- 
-    .promo-code {
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
- 
-    .promo-code span {
-        font-weight: bold;
-        color: #FFD700;
-        letter-spacing: 0.5px;
-    }
- 
-    .copy-btn {
-        background: transparent;
-        border: 1px solid #FFD700;
-        color: #FFD700;
-        padding: 3px 10px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 11px;
-        margin-left: 8px;
-        transition: all 0.3s;
-        font-weight: 600;
-    }
- 
-    .copy-btn:hover {
-        background: #FFD700;
-        color: #8B2E5C;
-    }
- 
-    .copied {
-        background: #4CAF50 !important;
-        color: white !important;
-        border-color: #4CAF50 !important;
-    }
- 
-    .expiry {
-        font-size: 12px;
-        opacity: 0.9;
-        margin-bottom: 25px;
-    }
- 
-    .cta-button {
-        background: #FF6347;
-        color: white;
-        border: none;
-        padding: 14px 40px;
-        border-radius: 25px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
- 
-    .cta-button:hover {
-        background: #FF4520;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 8px rgba(0,0,0,0.3);
-    }
- 
-    .cta-button:active {
-        transform: translateY(0);
-    }
- 
-    .sub-text {
-        font-size: 12px;
-        margin-top: 12px;
-        opacity: 0.95;
-    }
-</style>
- 
-<!-- CTA Section -->
-<div class="cta-section">
-    <div class="logo">BOOKKEEPING SERVICES USA</div>
-    <h1>Get started for less — accurate books from day one</h1>
-    
-    <button class="cta-button" onclick="handleCTA()">Let's do this!</button>
-    <div class="sub-text">For any new bookkeeping account.</div>
-</div>
- 
- 
-<section>
-<h2>FAQ</h2>
- 
-<h3>1. What do bookkeeping services in USA typically include?</h3>
-<p>Professional bookkeeping services in the USA generally cover transaction recording, bank reconciliation, accounts payable and receivable management, payroll processing, and financial statement preparation.</p>
- 
-<h3>2. How much do bookkeeping services cost in the USA?</h3>
-<p>Pricing varies by service scope and transaction volume. Many small business bookkeeping services in the USA start at $200–$500 per month, with full-service packages ranging higher.</p>
- 
-<h3>3. Do I need a bookkeeper if I already use QuickBooks?</h3>
-<p>Yes. While QuickBooks automates many tasks, a certified bookkeeper ensures accurate data entry, proper categorization, timely reconciliations, and IRS-compliant recordkeeping.</p>
- 
-<h3>4. Are bookkeeping services in USA suitable for small businesses?</h3>
-<p>Absolutely. Small businesses benefit greatly from professional bookkeeping — it helps maintain clean financial records, avoid tax penalties, and make data-driven decisions.</p>
- 
-<h3>5. What is the difference between a bookkeeper and a CPA in the USA?</h3>
-<p>A bookkeeper records and organizes financial transactions day-to-day. A CPA (Certified Public Accountant) uses that data for tax filing, audits, and higher-level financial advisory services. Many businesses in the USA work with both.</p>
- 
-</section>
- 
-<footer>
-<p>© 2026 Bookkeeping Services USA | All Rights Reserved</p>
-</footer>
  
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "What do bookkeeping services in USA typically include?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Bookkeeping services in the USA typically include transaction recording, bank reconciliation, accounts payable and receivable management, payroll processing, and preparation of financial statements."
-    }
-  },{
-    "@type": "Question",
-    "name": "How much do bookkeeping services cost in the USA?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Small business bookkeeping services in the USA commonly start at $200–$500 per month depending on transaction volume and the scope of services required."
-    }
-  },{
-    "@type": "Question",
-    "name": "Are bookkeeping services in USA good for small businesses?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, professional bookkeeping services help small businesses in the USA maintain accurate financial records, stay tax-compliant, and make smarter financial decisions."
-    }
-  },{
-    "@type": "Question",
-    "name": "What accounting software do USA bookkeepers use?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Most bookkeeping professionals in the USA work with platforms like QuickBooks Online, Xero, FreshBooks, or Wave to manage and organize client financial data."
-    }
-  },{
-    "@type": "Question",
-    "name": "What is the difference between a bookkeeper and a CPA in the USA?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "A bookkeeper handles day-to-day financial recordkeeping, while a CPA provides tax filing, auditing, and strategic financial advisory services. Many USA businesses use both professionals."
-    }
-  }]
+  "mainEntity": [
+    {"@type": "Question","name": "What do bookkeeping services in USA typically include?","acceptedAnswer": {"@type": "Answer","text": "Bookkeeping services in the USA include transaction recording, bank reconciliation, accounts payable and receivable, payroll processing, and financial statement preparation."}},
+    {"@type": "Question","name": "How much do bookkeeping services cost in the USA?","acceptedAnswer": {"@type": "Answer","text": "Small business bookkeeping in the USA typically starts at $200–$500 per month depending on transaction volume and services required."}},
+    {"@type": "Question","name": "Are bookkeeping services good for small businesses in the USA?","acceptedAnswer": {"@type": "Answer","text": "Yes — professional bookkeeping helps small businesses maintain accurate records, stay tax-compliant, and make better financial decisions."}},
+    {"@type": "Question","name": "What is the difference between a bookkeeper and a CPA?","acceptedAnswer": {"@type": "Answer","text": "A bookkeeper handles daily financial recordkeeping while a CPA provides tax filing and strategic advisory. Most US businesses use both."}}
+  ]
 }
 </script>
- 
 </body>
 </html>
